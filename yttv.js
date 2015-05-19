@@ -14,7 +14,7 @@ console.log('yay!');
 
 		var style = document.createElement('link');
 		style.rel = 'stylesheet';
-		style.href = "https://raw.githubusercontent.com/unRob/youtube-tv/master/yttv.css";
+		style.href = "https://unrob.github.io/youtube-tv/yttv.css";
 		document.head.appendChild(style);
 	};
 	setup();
