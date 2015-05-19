@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Youtube TV player</title>
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: #eee;
+		color: #222;
+	}
+
+	h1 {
+		font-family: 'Georgia', serif;
+		color: #888;
+		font-style: italic;
+		font-weight: 100;
+		font-size: 16px;
+		letter-spacing: .4vw;
+		text-transform: lowercase;
+	}
+
+	main {
+		text-align: center;
+		font-size: 18px;
+		font-family: 'Avenir Next', Avenir, sans-serif;
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.important {
+		font-size: 1.5em;
+	}
+
+	#bookmarklet {
+		display: inline-block;
+		color: #25E8C8;
+		border: 3px solid #25E8C8;
+		border-radius: 3px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0 1em;
+	}
+
+	ol {
+		list-style: none;
+		counter-reset: section;
+		text-align: left;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	li::before {
+		counter-increment: section;
+		content: counter(section)". ";
+		font-weight: bold;
+		color: #25E8C8;
+	}
+
+	li a {
+		color: #25E8C8;
+	}
+
+	</style>
+</head>
+<body>
+
+	<main>
+		<p class="important">The Youtube Subscriptions player for the<br /> old-timer within you.</p>
+
+		<hr />
+
+		<h1>Instructions</h1>
+
+		<p class="important">Bookmark <a id="bookmarklet" title="YoutubeTV" href="javascript:var%20s=document.createElement('script');s.src="https://unrob.github.com/
+		youtube-tv/master/yttv.js";document.body.appendChild(s);">this link</a> and then: </p>
+
+		<ol>
+			<li>Go to <a href="https://www.youtube.com/feed/subscriptions">your subscriptions</a></li>
+			<li>Activate your bookmark</li>
+			<li>???</li>
+			<li>PROFIT!!!1!!ELEVEN!!</li>
+		</ol>
+	</main>
+
+	<script>
+	var link = document.querySelector('#bookmarklet');
+	link.addEventListener('dragstart', function(){
+		this.innerText="YoutubeTV";
+	});
+
+	link.addEventListener('dragend', function(){
+		this.innerText="this link";
+	});
+	</script>
+
+</body>
+</html>
