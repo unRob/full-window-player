@@ -3,7 +3,7 @@ console.log('yay!');
 	var $ = function(i){ return document.querySelector(i); };
 	var $$ = function(i){ return document.querySelectorAll(i); };
 	var player;
-	var yt_ready = false;
+	var yt_ready = typeof YT !== undefined;
 	var videos = [];
 
 	var setup = function(){
@@ -17,7 +17,7 @@ console.log('yay!');
 		style.href = "https://unrob.github.io/youtube-tv/yttv.css";
 		document.head.appendChild(style);
 	};
-	setup();
+	if (!yt_player){ setup(); }
 
 
 	window.onYouTubeIframeAPIReady = function() {
@@ -100,6 +100,5 @@ console.log('yay!');
 	}
 	console.log('done parsing');
 	yt_ready && render();
-
 
 })();
