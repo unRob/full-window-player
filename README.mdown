@@ -1,6 +1,6 @@
 # Full Window Player bookmarklet
 
-Makes youtube and [some friends](css/)
+Makes youtube and [some friends](css/) take the whole browser window.
 
 ## Yes, please!
 
