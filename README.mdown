@@ -1,7 +1,9 @@
-# Youtube TV
+# Full Window Player bookmarklet
 
-The Youtube Subscriptions player for the old-timer within you.
+Makes youtube and [some friends](css/)
 
-## Usage
+## Yes, please!
 
-Follow the [white rabbit](https://unrob.github.com/youtube-tv).
+Well, have a [link to install](https://unrob.github.com/full-window-player) yourself however many copies as you wish to have!
+
+WTFPL
