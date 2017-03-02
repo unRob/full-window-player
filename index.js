@@ -21,7 +21,7 @@ function setup (list) {
   toggle.innerText='X'
   document.body.appendChild(toggle)
 
-  toggle.addEventListener('click', togglePlayer(list))
+  toggle.addEventListener('click', togglePlayer)
 
   styles(window.location.host)
     .forEach( r => styleTag.sheet.insertRule(r) )
