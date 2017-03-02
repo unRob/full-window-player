@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish": "npm run bookmarklet | node docs/index.js",
+    "publish": "npm run bookmarklet | node src/index.js",
     "bookmarklet": "npm run concat | babel --presets babili,es2015 --plugins iife-wrap",
     "concat": "node css/index.js | cat - index.js",
     "debug": "npm run concat | babel --presets es2015 --plugins iife-wrap"
