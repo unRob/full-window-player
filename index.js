@@ -3,8 +3,9 @@
 const styles = host => __DEFAULT_RULES__.concat(
   __RULES__.find( r => host.endsWith(r.domain) ).rules
 )
-const { classList } = document.body
+
 const togglePlayer = () => {
+  const { classList } = document.body
   console.info(
     (classList.contains('fwplayer') ? 'disabling' : 'enabling') + ' FWP'
   )
@@ -12,7 +13,7 @@ const togglePlayer = () => {
 }
 
 function setup (list) {
-  console.info('Initializing FWP');
+  console.info('Initializing FWP')
   const styleTag = document.createElement('style')
   document.head.appendChild(styleTag)
 
@@ -30,11 +31,11 @@ function setup (list) {
   list.add('fwplayer')
 }
 
-if (classList.contains('fwplayer-available')) {
+if (document.body.classList.contains('fwplayer-available')) {
   togglePlayer()
 } else {
   try {
-    setup(classList)
+    setup(document.body.classList)
   } catch (err) {
     alert('Could not setup player :(')
     console.error(err)
