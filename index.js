@@ -15,6 +15,8 @@ const togglePlayer = () => {
 function setup (list) {
   console.info('Initializing FWP')
   const styleTag = document.createElement('style')
+  styleTag.id = 'fw-player-styles'
+  styleTag.type = 'text/css'
   document.head.appendChild(styleTag)
 
   const toggle = document.createElement('button')
