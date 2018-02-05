@@ -1,4 +1,4 @@
-.fwplayer #masthead-positioner {
+.fwplayer #masthead-positioner, .fwplayer #masthead-container, .fwplayer #main {
   display: none;
 }
 
